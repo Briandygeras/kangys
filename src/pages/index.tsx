@@ -53,15 +53,7 @@ const Index = () => {
       {/* HERO */}
       <section className="hero-bg grid-bg min-h-screen flex items-center justify-center relative pt-20">
         <div className="container mx-auto px-6 md:px-12 text-center relative z-10">
-          <div className="animate-fade-in-up animate-delay-1 flex justify-center mb-6">
-            <img
-              src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100045188/52ca7a2d-0cb4-43.png"
-              alt="BT NEXUS"
-              className="h-32 md:h-44 w-auto object-contain"
-              style={{ filter: "drop-shadow(0 0 30px hsl(196 100% 55% / 0.5)) drop-shadow(0 0 60px hsl(220 100% 65% / 0.3))" }}
-            />
-          </div>
-          <div className="animate-fade-in-up animate-delay-2 inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8" style={{ background: "hsl(var(--neon) / 0.1)", border: "1px solid hsl(var(--neon) / 0.25)" }}>
+          <div className="animate-fade-in-up animate-delay-1 inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8" style={{ background: "hsl(var(--neon) / 0.1)", border: "1px solid hsl(var(--neon) / 0.25)" }}>
             <Zap size={14} style={{ color: "hsl(var(--neon))" }} />
             <span className="text-sm font-medium" style={{ color: "hsl(var(--neon))" }}>
               IA · Marketing · Monitoramento · Sites · Vídeos
