@@ -23,7 +23,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4" style={{ background: "hsl(var(--background) / 0.85)", backdropFilter: "blur(20px)", borderBottom: "1px solid hsl(var(--border))" }}>
         <div className="flex items-center">
           <img
-            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100045188/52ca7a2d-0cb4-43.png"
+            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100045188/81dd25be-8952-42.png"
             alt="BT NEXUS"
             className="h-12 w-auto object-contain"
           />
@@ -432,7 +432,7 @@ const Index = () => {
       <footer className="py-8 text-center" style={{ borderTop: "1px solid hsl(var(--border))" }}>
         <div className="flex flex-col items-center gap-3">
           <img
-            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100045188/52ca7a2d-0cb4-43.png"
+            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100045188/81dd25be-8952-42.png"
             alt="BT NEXUS"
             className="h-10 w-auto object-contain opacity-80"
           />
