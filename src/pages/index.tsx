@@ -3,11 +3,20 @@ import { Phone, Instagram, Monitor, Star, ArrowRight, Zap, Users, ChevronDown, B
 const openLink = (url: string) => {
   const a = document.createElement("a");
   a.href = url;
-  a.target = "_blank";
+  a.target = "_self";
   a.rel = "noreferrer";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
+};
+
+const openInstagram = () => {
+  const instaApp = "instagram://user?username=kangysofc";
+  const instaWeb = "https://www.instagram.com/kangysofc";
+  window.location.href = instaApp;
+  setTimeout(() => {
+    window.location.href = instaWeb;
+  }, 1500);
 };
 
 const Index = () => {
@@ -195,42 +204,42 @@ const Index = () => {
             {[
               {
                 name: "Bronze",
-                price: "R$ 349",
+                price: "R$ 597",
                 period: "único",
                 desc: "Ideal para quem quer começar com presença digital",
                 color: "hsl(25 80% 60%)",
                 colorBg: "hsl(25 80% 60% / 0.1)",
-                features: ["Site básico (até 3 páginas)", "Design responsivo", "Formulário de contato", "Entrega em 7 dias", "1 revisão incluída"],
+                features: ["Site básico (até 3 páginas)", "Design responsivo", "Formulário de contato incluso", "Entrega em 7 dias", "1 revisão incluída"],
                 highlight: false,
               },
               {
                 name: "Ferro",
-                price: "R$ 749",
+                price: "R$ 1.197",
                 period: "único",
                 desc: "Para negócios que querem impacto visual",
                 color: "hsl(220 60% 65%)",
                 colorBg: "hsl(220 60% 65% / 0.1)",
-                features: ["Site moderno (até 6 páginas)", "Animações profissionais", "4 vídeos editados/mês", "Design premium", "2 revisões incluídas"],
+                features: ["Site moderno (até 6 páginas)", "Animações profissionais", "4 vídeos editados por mês", "Design premium", "2 revisões incluídas"],
                 highlight: false,
               },
               {
                 name: "Ouro",
-                price: "R$ 1.297",
+                price: "R$ 1.597",
                 period: "/mês",
                 desc: "Solução completa para crescimento digital",
                 color: "hsl(47 100% 60%)",
                 colorBg: "hsl(47 100% 60% / 0.1)",
-                features: ["Site moderno premium", "Gestão de marketing digital", "8 vídeos editados/mês", "Monitoramento de contas", "Suporte prioritário", "Relatórios mensais"],
+                features: ["Site moderno premium", "Gestão de marketing digital", "8 vídeos editados por mês", "Monitoramento de contas", "Suporte prioritário", "Relatórios mensais de desempenho"],
                 highlight: true,
               },
               {
                 name: "Diamante",
-                price: "R$ 2.197",
+                price: "R$ 2.497",
                 period: "/mês",
-                desc: "Para empresas que exigem o máximo",
+                desc: "Para empresas que querem o máximo",
                 color: "hsl(196 100% 55%)",
                 colorBg: "hsl(196 100% 55% / 0.1)",
-                features: ["Site futurístico + animações 3D", "Marketing digital completo", "Vídeos ilimitados/mês", "Monitoramento avançado", "Chat bot com IA", "Design exclusivo", "Suporte 24h"],
+                features: ["Site futurístico + animações 3D", "Marketing digital completo", "Vídeos ilimitados por mês", "Monitoramento avançado", "Chatbot com IA", "Design exclusivo premium", "Suporte 24 horas"],
                 highlight: false,
               },
             ].map((plan) => (
@@ -285,12 +294,12 @@ const Index = () => {
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { name: "Site Básico", price: "R$ 349", desc: "1 página, responsivo" },
-                { name: "Site Moderno", price: "R$ 797", desc: "Até 6 páginas + animações" },
-                { name: "Site Futurístico", price: "R$ 1.497", desc: "Design avançado + 3D" },
-                { name: "Edição de Vídeos", price: "R$ 297/mês", desc: "Pacote 4 vídeos mensais" },
-                { name: "Monitoramento", price: "R$ 197/mês", desc: "Contas e plataformas digitais" },
-                { name: "Chat Bot IA", price: "R$ 597", desc: "Setup único + integração" },
+                { name: "Site Básico", price: "R$ 597", desc: "1 página, responsivo" },
+                { name: "Site Moderno", price: "R$ 1.197", desc: "6 páginas + animações" },
+                { name: "Site Futurístico", price: "R$ 1.997", desc: "Design avançado + 3D" },
+                { name: "Edição de Vídeos", price: "R$ 497/mês", desc: "Pacote 4 vídeos mensais" },
+                { name: "Monitoramento", price: "R$ 297/mês", desc: "Contas e plataformas digitais" },
+                { name: "Chatbot com IA", price: "R$ 997", desc: "Configuração única + integração" },
               ].map((item) => (
                 <div key={item.name} className="service-card p-5 flex items-center justify-between gap-4">
                   <div>
@@ -337,12 +346,12 @@ const Index = () => {
                     (17) 92003-0905
                   </a>
                   <button
-                    onClick={() => openLink("https://instagram.com/brian_18939")}
+                    onClick={() => openInstagram()}
                     className="contact-link text-sm"
                     style={{ color: "hsl(var(--muted-foreground))" }}
                   >
                     <Instagram size={15} style={{ color: "hsl(var(--neon))" }} />
-                    @brian_18939
+                    @kangysofc
                   </button>
                 </div>
               </div>
@@ -356,9 +365,9 @@ const Index = () => {
                   T
                 </div>
                 <h3 className="font-['Syne'] font-bold text-2xl mb-1 text-foreground">Thales</h3>
-                <p className="text-sm font-medium mb-5" style={{ color: "hsl(var(--gold))" }}>Co-fundador & Designer · 14 anos</p>
+                <p className="text-sm font-medium mb-5" style={{ color: "hsl(var(--gold))" }}>Co-fundador & Designer</p>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                  Com 14 anos e talento incrível, Thales traz frescor e inovação para cada projeto. Prova que idade não limita o talento quando há dedicação.
+                  Com criatividade e olhar único para design, Thales transforma ideias em visuais que impressionam e convertem.
                 </p>
                 <div className="flex flex-col gap-3">
                   <a href="tel:+5517997343854" className="contact-link text-sm" style={{ color: "hsl(var(--muted-foreground))" }}>
@@ -417,12 +426,12 @@ const Index = () => {
             </div>
 
             <button
-              onClick={() => openLink("https://instagram.com/brian_18939")}
+              onClick={() => openInstagram()}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 cursor-pointer"
               style={{ background: "hsl(var(--neon) / 0.08)", border: "1px solid hsl(var(--neon) / 0.2)", color: "hsl(var(--neon))" }}
             >
               <Instagram size={18} />
-              <span className="font-medium">@brian_18939</span>
+              <span className="font-medium">@kangysofc</span>
             </button>
           </div>
         </div>
