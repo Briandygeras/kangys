@@ -195,7 +195,7 @@ const Index = () => {
             {[
               {
                 name: "Bronze",
-                price: "R$ 349",
+                price: "R$ 497",
                 period: "único",
                 desc: "Ideal para quem quer começar com presença digital",
                 color: "hsl(25 80% 60%)",
@@ -205,32 +205,32 @@ const Index = () => {
               },
               {
                 name: "Ferro",
-                price: "R$ 749",
+                price: "R$ 997",
                 period: "único",
                 desc: "Para negócios que querem impacto visual",
                 color: "hsl(220 60% 65%)",
                 colorBg: "hsl(220 60% 65% / 0.1)",
-                features: ["Site moderno (até 6 páginas)", "Animações profissionais", "4 vídeos editados/mês", "Design premium", "2 revisões incluídas"],
+                features: ["Site moderno (até 6 páginas)", "Animações profissionais", "2 vídeos editados", "Design premium", "2 revisões incluídas"],
                 highlight: false,
               },
               {
                 name: "Ouro",
-                price: "R$ 1.297",
-                period: "/mês",
+                price: "R$ 1.597",
+                period: "único",
                 desc: "Solução completa para crescimento digital",
                 color: "hsl(47 100% 60%)",
                 colorBg: "hsl(47 100% 60% / 0.1)",
-                features: ["Site moderno premium", "Gestão de marketing digital", "8 vídeos editados/mês", "Monitoramento de contas", "Suporte prioritário", "Relatórios mensais"],
+                features: ["Site moderno premium", "Gestão de marketing digital", "4 vídeos editados", "Monitoramento de contas", "Suporte prioritário", "Relatórios mensais"],
                 highlight: true,
               },
               {
                 name: "Diamante",
-                price: "R$ 2.197",
-                period: "/mês",
+                price: "R$ 2.497",
+                period: "único",
                 desc: "Para empresas que exigem o máximo",
                 color: "hsl(196 100% 55%)",
                 colorBg: "hsl(196 100% 55% / 0.1)",
-                features: ["Site futurístico + animações 3D", "Marketing digital completo", "Vídeos ilimitados/mês", "Monitoramento avançado", "Chat bot com IA", "Design exclusivo", "Suporte 24h"],
+                features: ["Site futurístico + animações 3D", "Marketing digital completo", "6 vídeos editados", "Monitoramento avançado", "Chat bot com IA", "Design exclusivo", "Suporte 24h"],
                 highlight: false,
               },
             ].map((plan) => (
@@ -285,12 +285,13 @@ const Index = () => {
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { name: "Site Básico", price: "R$ 349", desc: "1 página, responsivo" },
-                { name: "Site Moderno", price: "R$ 797", desc: "Até 6 páginas + animações" },
-                { name: "Site Futurístico", price: "R$ 1.497", desc: "Design avançado + 3D" },
-                { name: "Edição de Vídeos", price: "R$ 297/mês", desc: "Pacote 4 vídeos mensais" },
-                { name: "Monitoramento", price: "R$ 197/mês", desc: "Contas e plataformas digitais" },
-                { name: "Chat Bot IA", price: "R$ 597", desc: "Setup único + integração" },
+                { name: "Site Básico", price: "R$ 597", desc: "1 página, responsivo" },
+                { name: "Site Moderno", price: "R$ 1.197", desc: "Até 6 páginas + animações" },
+                { name: "Site Futurístico", price: "R$ 1.997", desc: "Design avançado + 3D" },
+                { name: "Edição de Vídeos", price: "R$ 497/mês", desc: "Pacote 4 vídeos mensais" },
+                { name: "Monitoramento", price: "R$ 297/mês", desc: "Contas e plataformas digitais" },
+                { name: "Marketing Digital", price: "R$ 697/mês", desc: "Gestão completa das redes" },
+                { name: "Chat Bot IA", price: "R$ 997", desc: "Setup único + integração" },
               ].map((item) => (
                 <div key={item.name} className="service-card p-5 flex items-center justify-between gap-4">
                   <div>
@@ -356,9 +357,9 @@ const Index = () => {
                   T
                 </div>
                 <h3 className="font-['Syne'] font-bold text-2xl mb-1 text-foreground">Thales</h3>
-                <p className="text-sm font-medium mb-5" style={{ color: "hsl(var(--gold))" }}>Co-fundador & Designer · 14 anos</p>
+                <p className="text-sm font-medium mb-5" style={{ color: "hsl(var(--gold))" }}>Co-fundador & Designer </p>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                  Com 14 anos e talento incrível, Thales traz frescor e inovação para cada projeto. Prova que idade não limita o talento quando há dedicação.
+                 Talento incrível, Thales traz frescor e inovação para cada projeto. Prova que idade não limita o talento quando há dedicação.
                 </p>
                 <div className="flex flex-col gap-3">
                   <a href="tel:+5517997343854" className="contact-link text-sm" style={{ color: "hsl(var(--muted-foreground))" }}>
@@ -437,7 +438,7 @@ const Index = () => {
             className="h-10 w-auto object-contain opacity-80"
           />
           <p className="text-sm text-muted-foreground">
-            © 2025 <span className="neon-text font-semibold">BT NEXUS</span> · Todos os direitos reservados
+            © 2026 <span className="neon-text font-semibold">BT NEXUS</span> · Todos os direitos reservados
           </p>
         </div>
       </footer>
