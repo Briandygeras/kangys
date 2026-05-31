@@ -437,7 +437,7 @@ const Index = () => {
             className="h-10 w-auto object-contain opacity-80"
           />
           <p className="text-sm text-muted-foreground">
-            © 2025 <span className="neon-text font-semibold">BT NEXUS</span> · Todos os direitos reservados
+            © 2026 <span className="neon-text font-semibold">BT NEXUS</span> · Todos os direitos reservados
           </p>
         </div>
       </footer>
